@@ -1,5 +1,7 @@
 # Frontend Mentor - NFT preview card component
 
+https://zenab12.github.io/NFT_Card_Challenge/
+
 ![Design preview for the NFT preview card component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋

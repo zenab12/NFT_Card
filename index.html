@@ -10,24 +10,77 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+    :root
+    {
+    --main-bg:hsl(217, 54%, 11%);
+    --card-bg:hsl(216, 50%, 16%);
+    --dark-shadow:hsl(221,52%,11%);
+    --light-shadow:hsl(218,55%,11%);
+    --border:hsl(215, 32%, 27%);
+    --cyan:hsl(178, 100%, 50%);
+    --font: hsl(215, 51%, 70%);
+    --white:hsl(0, 0%, 100%);
+    --footer: hsl(228, 45%, 44%);
+    }
+    body
+    {
+    font-family: 'Outfit', sans-serif;
+    text-align:center;
+    background:var(--main-bg)
+     height:670px;
+    }
+    figure,body,.prop{ display:flex;flex-direction:column;justify-content:center;align-items:center;}
+    
+    figure {
+     padding:10px;
+     border-radius:15px;
+     background:var(--card-bg);
+     box-shadow:0px 4px 6px 13px var(--dark-shadow),
+                0px 8px 12px 13px var(--light-shadow),
+    }
+    
+    figure > img {border-radius:10px;max-width:100%;}
+    
+    figure h2 {color:var(--white);font-weight:600;}
+    figure p{font-size:18px;color:var(--font);font-weight:300;}
+
+    figure .prop {flex-direction:row; justify-content:space-between;font-weight:400;}
+    figure .prop img{padding-right:5px}
+    figure .prop .salary {color:var(--cyan}
+    figure .prop .time {color:var(--border)}
+    figure .prop::after{ border:5px solid var(--border);border-radius:3px;display:block;width:95%;height;3px;}
+    
+    figure .creator{color:var(--border);font-weight:400;}
+    figure .creator span{color:var(--white}
+    
+    .attribution { font-size: 11px;}
+    .attribution a { color:var(--footer)
+    }
   </style>
 </head>
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
   
-  Creation of Jules Wyvern
+  <figure class="card">
+    
+    <img src="images/image-equilibrium.jpg" alt="NFTCard"/>
+    <figcaption>
+       <h2>  Equilibrium #3429 </h2>
+       <p>   Our Equilibrium collection promotes balance and calm. </p>
+      <div class="prop">
+        <div class="salary"><img src="images/icon-ethereum.svg" alt"ethrium">   0.041 ETH </div>  
+        <div class="time"><img src="images/icon-clock.svg" alt"timeleft">  3 days left </div>  
+      <div>
+      <div class="border"></div>
+        <div class="creator"><img src="images/image-avatar.png" alt="creator">  Creation of <span>Zienab Mohamed</span></div>
+    </figcaption>
+  </figure>
+
+  
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/zenab12">Zienab Mohamed</a>.
   </div>
 </body>
 </html>

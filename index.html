@@ -30,7 +30,7 @@
     background:var(--main-bg);
     height:700px;
     }
-    figure,body,.prop{ display:flex;flex-direction:column;justify-content:center;align-items:center;}
+    figure,body,.prop,.creator,.salary,.time{ display:flex;flex-direction:column;place-items: center;}
     
     figure {
      width:300px;
@@ -51,10 +51,10 @@
     figure .prop .time {color:var(--font)}
     figure .border{ border:5px solid var(--border);border-radius:3px;display:block;width:95%;height;3px;}
     
-    figure .creator{display:flex;align-items:center;flex-direction:row;justify-content:flex-start;}
-    figure .creator a {color:var(--font);font-weight:400;}
-    figure .creator a span{color:var(--white);font-size:20px}
-    figure .creator img{width:50px}
+    figure .creator{margin-top: 20px;}
+    figure .creator {color:var(--font);font-weight:400;}
+    figure .creator span{color:var(--white);font-size:20px}
+    figure .creator img{width:50px;padding-right:10px}
     
     .attribution { font-size: 11px;    text-align:center;}
     .attribution a { color:var(--footer)}
@@ -72,7 +72,8 @@
         <div class="salary"><img src="images/icon-ethereum.svg" alt"ethrium">   0.041 ETH </div>  
         <div class="time"><img src="images/icon-clock.svg" alt"timeleft">  3 days left </div>  
       </div>
-      <div class="creator"><img src="images/image-avatar.png" alt="creator">  Creation of <span>Zienab Mohamed</span></div>
+      <div class="border"></div>
+      <div class="creator"><img src="images/image-avatar.png" alt="creator">  Creation of <span> Zienab Mohamed</span></div>
     </figcaption>
   </figure>
 
@@ -80,7 +81,7 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/zenab12">Zienab Mohamed</a>.
+    Coded by <a href="https://github.com/zenab12"> Zienab Mohamed</a>.
   </div>
 </body>
 </html>

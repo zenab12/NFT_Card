@@ -15,7 +15,7 @@
     {
     --main-bg:hsl(217, 54%, 11%);
     --card-bg:hsl(216, 50%, 16%);
-    --dark-shadow:hsl(221, 52%, 11%));
+    --dark-shadow:hsl(221, 52%, 11%);
     --light-shadow:hsl(218,61%, 11.5%);
     --border:hsl(215, 32%, 27%);
     --cyan:hsl(178, 100%, 50%);
@@ -23,11 +23,12 @@
     --white:hsl(0, 0%, 100%);
     --footer: hsl(228, 45%, 44%);
     }
+    a {color:var(--white);}
     body
     {
     font-family: 'Outfit', sans-serif;
     background:var(--main-bg);
-    height:670px;
+    height:700px;
     }
     figure,body,.prop{ display:flex;flex-direction:column;justify-content:center;align-items:center;}
     
@@ -42,17 +43,18 @@
     figure > img {border-radius:10px;max-width:100%;}
     
     figure h2 {color:var(--white);font-weight:600;}
-    figure p{font-size:18px;color:var(--font);font-weight:300;}
+    figure p{font-size:18px;color:var(--border);font-weight:300;}
 
     figure .prop {flex-direction:row; justify-content:space-between;font-weight:400;}
     figure .prop img{padding-right:5px}
     figure .prop .salary {color:var(--cyan)}
-    figure .prop .time {color:var(--border)}
-    figure .prop:after{ border:5px solid var(--border);border-radius:3px;display:block;width:95%;height;3px;}
+    figure .prop .time {color:var(--font)}
+    figure .border{ border:5px solid var(--border);border-radius:3px;display:block;width:95%;height;3px;}
     
-    figure .creator a {color:var(--border);font-weight:400;}
+    figure .creator{display:flex;align-items:center;flex-direction:row;justify-content:flex-start;}
+    figure .creator a {color:var(--font);font-weight:400;}
     figure .creator a span{color:var(--white);font-size:20px}
-    figure .creator img{width:70px}
+    figure .creator img{width:50px}
     
     .attribution { font-size: 11px;    text-align:center;}
     .attribution a { color:var(--footer)}

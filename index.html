@@ -33,11 +33,12 @@
     figure,body,.prop,.creator,.salary,.time{ display:flex;flex-direction:column;place-items: center;}
     
     figure {
+     margin-top:50px;
      width:300px;
      padding:16px;
      border-radius:15px;
      background:var(--card-bg);
-     box-shadow:0px 26px 2px 17px var(--dark-shadow), 0px 21px 30px 43px var(--light-shadow);
+     box-shadow:0px 20px 2px 14px var(--dark-shadow), 0px 24px 30px 33px var(--light-shadow);
     }
     
     figure > img {border-radius:10px;max-width:100%;}
@@ -49,14 +50,14 @@
     figure .prop img{padding-right:5px}
     figure .prop .salary {flex-direction:row;color:var(--cyan)}
     figure .prop .time {flex-direction:row;color:var(--font)}
-    figure .border{background: var(--border);border-radius:.5px;display:block;width:95%;height:1px;margin:0px 10px}
+    figure .border{background: var(--border);border-radius:.5px;display:block;width:95%;height:2px;margin:20px 0px;}
     
     figure .creator{flex-direction:row;justify-content:start;margin-top: 20px;}
     figure .creator {color:var(--font);font-weight:400;}
-    figure .creator span{color:var(--white);font-size:17px}
+    figure .creator span{color:var(--white);font-size:17px;padding-right:3px}
     figure .creator img{width:50px;padding-right:10px}
     
-    .attribution { font-size: 11px; text-align:center; margin-top:70px}
+    .attribution { font-size: 11px; text-align:center; margin-top:70px;color:var(--white)}
     .attribution a { color:var(--footer)}
   </style>
 </head>

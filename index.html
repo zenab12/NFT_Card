@@ -28,13 +28,13 @@
     {
     font-family: 'Outfit', sans-serif;
     background:var(--main-bg);
-    height:700px;
-    justify-content:center
+    min-height:100vh;
+    place-content:center
     }
-    figure,body,.prop,.creator,.salary,.time,.overlay{ display:flex;flex-direction:column;place-items: center}
+    main{flex-grow:1}
+    figure,body,.prop,.creator,.salary,.time,.overlay,main{ display:flex;flex-direction:column;place-items: center}
     
     figure {
-     margin-top:50px;
      width:300px;
      padding:16px;
      border-radius:15px;
@@ -68,7 +68,7 @@
     figure .creator p {color:var(--font);font-weight:400;padding-left:20px;}
     figure .creator span{color:var(--white);font-size:17px;padding-left:3px;}
     figure .creator img{width:40px;border-radius:50%;outline:1px solid var(--white)}
-    main{margin-top:200px;}
+   
     .attribution { font-size: 11px; text-align:center; margin-top:60px;margin-bottom:10px;color:var(--white)}
     .attribution a { color:var(--footer)}
     

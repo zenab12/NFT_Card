@@ -20,7 +20,7 @@
     place-content:center;
     margin:0px
     }
-    main{flex-grow:1}
+    main{flex-grow:1;place-content:center;}
     figure,body,.prop,.creator,.salary,.time,.overlay,main{ display:flex;flex-direction:column;place-items: center}
     
     figure {

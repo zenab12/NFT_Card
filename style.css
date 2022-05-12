@@ -57,7 +57,7 @@
     figure .creator p {color:var(--font);font-weight:400;padding-left:20px;}
     figure .creator span a{color:var(--white);font-size:17px;padding-left:10px;display:inine-block;transition:all .5s ease-in}
     figure .creator span:hover a{color:var(--cyan);cursor:ponter;}
-    figure .creator img{width:40px;border-radius:50%;outline:1px solid var(--white)}
+    figure .creator img{width:40px;border-radius:50%;border:1px solid var(--white)}
    
     .attribution { font-size: 11px; text-align:center; margin-top:60px;margin-bottom:10px;color:var(--white)}
     .attribution a { color:var(--footer)}

@@ -17,7 +17,8 @@
     font-family: 'Outfit', sans-serif;
     background:var(--main-bg);
     min-height:100vh;
-    place-content:center
+    place-content:center;
+    margin:0px
     }
     main{flex-grow:1}
     figure,body,.prop,.creator,.salary,.time,.overlay,main{ display:flex;flex-direction:column;place-items: center}

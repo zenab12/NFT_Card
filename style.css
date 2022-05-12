@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+    :root
+    {
+    --main-bg:hsl(217, 54%, 11%);
+    --card-bg:hsl(216, 50%, 16%);
+    --dark-shadow:hsl(221, 52%, 11%);
+    --light-shadow:hsl(218,61%, 11.5%);
+    --border:hsl(215, 32%, 27%);
+    --cyan:hsl(178, 100%, 50%);
+    --font: hsl(215, 51%, 70%);
+    --white:hsl(0, 0%, 100%);
+    --footer: hsl(228, 45%, 44%);
+    }
+    a {color:var(--white);}
+    body
+    {
+    font-family: 'Outfit', sans-serif;
+    background:var(--main-bg);
+    min-height:100vh;
+    place-content:center
+    }
+    main{flex-grow:1}
+    figure,body,.prop,.creator,.salary,.time,.overlay,main{ display:flex;flex-direction:column;place-items: center}
+    
+    figure {
+     width:300px;
+     padding:16px;
+     border-radius:15px;
+     background:var(--card-bg);
+     box-shadow:0px 20px 2px 14px var(--dark-shadow), 0px 24px 30px 33px var(--light-shadow);
+    }
+    div.image {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    border-radius:10px;
+    transition:all .5s linear;
+}
+    .overlay{width:100%;height:100%;position:absolute;top:0;left: 0;background:var(--cyan) ;opacity:0;transition:opacity 0.6s linear;z-index: 2;justify-content:center;border-radius:10px;}
+    figure img {border-radius:10px;max-width:100%;}
+    div.image:hover .overlay{opacity:.7;}
+    
+    figure h1 {color:var(--white);font-weight:600;;transition:all .5s linear}
+    figure h1:hover{color:var(--cyan)}
+    figure p{font-size:18px;color:var(--font);font-weight:300;}
+
+    figure .prop {flex-direction:row; justify-content:space-between;font-weight:400;}
+    figure .prop img{padding-right:5px}
+    figure .prop .salary {flex-direction:row;color:var(--cyan)}
+    figure .prop .time {flex-direction:row;color:var(--font)}
+    figure .border{background: var(--border);border-radius:.5px;display:block;width:100%;height:2px;margin:20px 0px;}
+    
+    figure .creator{flex-direction:row;justify-content:start;margin-top: 20px;}
+    figure .creator p {color:var(--font);font-weight:400;padding-left:20px;}
+    figure .creator span{color:var(--white);font-size:17px;padding-left:3px;}
+    figure .creator img{width:40px;border-radius:50%;outline:1px solid var(--white)}
+   
+    .attribution { font-size: 11px; text-align:center; margin-top:60px;margin-bottom:10px;color:var(--white)}
+    .attribution a { color:var(--footer)}
+    
+    @media(max-width:375px){
+      figure{width:280px;}
+    }

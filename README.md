@@ -24,8 +24,7 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Screenshot
-
-![](images/screenshot.png)
+![zenab12 github io_NFT_Card_Challenge_(Nest Hub Max)](https://user-images.githubusercontent.com/78083890/170306559-5f55f5d7-4b15-40b3-b907-f7dfb72f47a0.png)
 
 ### Links
 
